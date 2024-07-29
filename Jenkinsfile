@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        echo 'Versions:'
         sh '''
           node --version
           git --version
