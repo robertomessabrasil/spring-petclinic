@@ -6,6 +6,7 @@ pipeline {
         docker { image 'maven:3.8.1-adoptopenjdk-11' }
       }
       steps {
+        echo 'Maven version:'
         sh 'mvn --version'
       }
     }
@@ -14,6 +15,7 @@ pipeline {
         docker { image 'node:16-alpine' }
       }
       steps {
+        echo 'Node version:'
         sh 'node --version'
       }
     }
